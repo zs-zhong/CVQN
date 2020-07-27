@@ -1,0 +1,118 @@
+NAME: gmm_32_all5_baseline
+GPU_DEVICE: 0
+PRINT_FREQ: 30
+WORKERS: 16
+# log output
+LOG_DIR: 'logs'
+# model output
+MODEL_DIR: 'ckps'
+# Tensorboard output
+TSBD_DIR: 'tbs'
+
+
+# Common (ENC/DEC QUA & ENP)
+IN_CHNS: 3
+CODE_CHNS: 32
+QUA_LEVELS:
+  - 5
+
+# Importance type: 
+# 'predefine' for predefine channel importance
+# 'SE' for channel attention learning based channel importance
+# 'LR_SE' for the initlized learning rate for the CA model
+# 'RE' for reconstruction error based channel importance
+# 'RE_END_BATCH' for the batch size of RE validation dataset
+IMP_TYPE: 'predefine'
+LR_SE: 0.0001
+RE_END_BATCH: 100
+
+# Dataset
+DATASET:
+  TRAIN_SET: 'path to the train dataset'
+  TEST_SET: 'path to the test dataset'
+  PATCH_SIZE: 256
+  MEAN:
+    - 0.4488
+    - 0.4371
+    - 0.4040
+  STD:
+    - 1.0
+    - 1.0
+    - 1.0
+
+# Train
+TRAIN:
+  LR_ENC: 0.0001
+  LR_DEC: 0.0001
+  LR_ENP: 0.0001
+  LR_QUA: 0.00005   
+  BATCH_SIZE: 32
+  NUM_EPOCH: 400
+  ALPHA: 256
+  BETA: 0
+  CLIP_VALUE: 5
+  MILESTONES:
+    - 200
+    - 300
+    - 350
+  GAMMA: 0.2
+
+# Encoder
+ENC:
+  BLOCK_NUMS:
+    - 6
+    - 6
+    - 6
+    - 6
+  FEAT_NUMS:
+    - 32
+    - 64
+    - 128
+    - 192
+  GDN_FLAG:
+    True
+  ACT:
+    'relu'
+
+# Decoder
+DEC:
+  BLOCK_NUMS:
+    - 6
+    - 6
+    - 6
+    - 6
+  FEAT_NUMS:
+    - 192
+    - 128
+    - 64
+    - 32
+  GDN_FLAG:
+    True
+  ACT:
+    'relu'
+
+# Quantizer
+QUA:
+  STD:
+    -
+      - 0.7072
+      - 0.7072
+      - 0.7072
+      - 0.7072
+      - 0.7072
+  PI:
+    -
+      - 0.2
+      - 0.2
+      - 0.2
+      - 0.2
+      - 0.2
+    
+
+# Entropy
+ENP:
+  PART:
+    - 1.0
+  FEAT_NUMS:
+    - 192
+
