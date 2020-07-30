@@ -14,7 +14,7 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 ***********************************************************************************************************
 
 # Overview
-Framework of the channel-level variable quantization network.
+<center>Framework of the channel-level variable quantization network.</center>
 <div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 
 # Dependencies
@@ -23,7 +23,6 @@ Framework of the channel-level variable quantization network.
 - torchvision (0.4.0)
 - PyYaml (5.2)
 - tensorboard (2.0.1)
-
 
 
 # Data Download
@@ -48,8 +47,11 @@ Your CVQN folder may be similar to this:
 
 # Training and Evaluation
 Please modify the training & evaluation dataset path in `yaml/XXX.yaml`. 
+
 You can also modify other parameters to change the model and training strategy in the same file. 
+
 An example to train a model:
+
 
 ```bash
 python main_train_eval.py --config yaml/XXX.yaml
@@ -62,7 +64,7 @@ If you find this code useful, please cite our paper:
 @inproceedings{Zhong2020CVQN,
   title     = {Channel-Level Variable Quantization Network for Deep Image Compression},
   author    = {Zhong, Zhisheng and Akutsu, Hiroaki and Aizawa, Kiyoharu},
-  booktitle = {Proceedings of the International Joint Conference on Artificial Intelligence, (IJCAI)},
+  booktitle = {Proceedings of the International Joint Conference on Artificial Intelligence},
   pages     = {467--473},
   year      = {2020}
 }
