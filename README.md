@@ -30,16 +30,14 @@ Framework of the channel-level variable quantization network.
 These training datasets can be downloaded from the above links.
 
 - [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K)
-
 - [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
-
 - [CLIC2019](https://www.compression.cc/challenge)
 
 # Folder Structure
 Your folder may be similar to this:
 
 ```
-__CVQN__
+CVQN
 --logs (log folder)
 --ckps (checkpoint folder)
 --tbs (tensorboard log folder)
