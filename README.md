@@ -4,28 +4,29 @@ This repository is for "Channel-Level Variable Quantization Network for Deep Ima
 (to appear in IJCAI, 2020)
 By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aizawa](https://www.hal.t.u-tokyo.ac.jp/~aizawa/).
 
-
-***********************************************************************************************************
-## Table of contents
+# Table of contents
 - [Overview](#overview)
 - [Data Download](#data-download)
 - [Folder Structure](#folder-structure)
 - [Training and Evaluation](#training-and-evaluation)
+
 ***********************************************************************************************************
 
 # Overview
-<p align="center">Framework of the channel-level variable quantization network</p>
+
 <div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
+<p align="center">Framework of the channel-level variable quantization network.</p>
 
 # Dependencies
+
 - Python (3.7.5)
 - PyTorch (1.2.0)
 - torchvision (0.4.0)
 - PyYaml (5.2)
 - tensorboard (2.0.1)
 
-
 # Data Download
+
 These training datasets can be downloaded from the above links.
 
 - [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K)
@@ -33,6 +34,7 @@ These training datasets can be downloaded from the above links.
 - [CLIC2019](https://www.compression.cc/challenge)
 
 # Folder Structure
+
 Your CVQN folder may be similar to this:
 
 ```
@@ -46,18 +48,19 @@ Your CVQN folder may be similar to this:
 ```
 
 # Training and Evaluation
+
 Please modify the training & evaluation dataset path in `yaml/XXX.yaml`. 
 
 You can also modify other parameters to change the model and training strategy in the same file. 
 
 An example to train a model:
 
-
 ```bash
 python main_train_eval.py --config yaml/XXX.yaml
 ```
 
 ### Citation
+
 If you find this code useful, please cite our paper:
 
 ```
