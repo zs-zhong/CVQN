@@ -6,7 +6,7 @@ This repository is for [Channel-Level Variable Quantization Network for Deep Ima
 
 By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aizawa](https://www.hal.t.u-tokyo.ac.jp/~aizawa/).
 
-# Table of contents
+## Table of contents
 - [Overview](#overview)
 - [Data Download](#data-download)
 - [Folder Structure](#folder-structure)
@@ -14,12 +14,12 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 
 ***********************************************************************************************************
 
-# Overview
+## Overview
 
 <div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 <p align="center">Framework of the channel-level variable quantization network.</p>
 
-# Dependencies
+## Dependencies
 
 - Python (3.7.5)
 - PyTorch (1.2.0)
@@ -27,7 +27,7 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 - PyYaml (5.2)
 - tensorboard (2.0.1)
 
-# Data Download
+## Data Download
 
 These training datasets can be downloaded from the above links.
 
@@ -35,7 +35,7 @@ These training datasets can be downloaded from the above links.
 - [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
 - [CLIC2019](https://www.compression.cc/challenge)
 
-# Folder Structure
+## Folder Structure
 
 Your CVQN folder may be similar to this:
 
@@ -49,7 +49,7 @@ Your CVQN folder may be similar to this:
 -- *.py
 ```
 
-# Training and Evaluation
+## Training and Evaluation
 
 Please modify the training & evaluation dataset path in `yaml/XXX.yaml`. 
 
