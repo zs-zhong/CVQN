@@ -1,6 +1,6 @@
 # CVQN
 
-This repository is for "Channel-Level Variable Quantization Network for Deep Image Compression"
+This repository is for [Channel-Level Variable Quantization Network for Deep Image Compression](https://arxiv.org/abs/2007.12619).
 
 (to appear in IJCAI, 2020)
 
