@@ -34,22 +34,21 @@ These training datasets can be downloaded from the above links.
 - [CLIC2019](https://www.compression.cc/challenge)
 
 # Folder Structure
-Your folder may be similar to this:
+Your CVQN folder may be similar to this:
 
 ```
-CVQN
 --logs (log folder)
 --ckps (checkpoint folder)
 --tbs (tensorboard log folder)
 --yaml (yaml folder)
 --pytorch_msssim
 --config
---python file
+--*.py
 ```
 
 # Training and Evaluation
-Please modify the training & evaluation dataset path in `yaml/XXX.yaml`. You can also modify other parameters in the same file. 
-
+Please modify the training & evaluation dataset path in `yaml/XXX.yaml`. 
+You can also modify other parameters to change the model and training strategy in the same file. 
 An example to train a model:
 
 ```bash
