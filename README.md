@@ -6,6 +6,16 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 
 
 ***********************************************************************************************************
+## Table of contents
+- [Overview](#overview)
+- [Data Download](#data-download)
+- [Folder Structure](#folder-structure)
+- [Training and Evaluation](#training-and-evaluation)
+***********************************************************************************************************
+
+# Overview
+Framework of the channel-level variable quantization network.
+<div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 
 # Dependencies
 - Python (3.7.5)
@@ -14,25 +24,26 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 - PyYaml (5.2)
 - tensorboard (2.0.1)
 
-# Overview
-Framework of the channel-level variable quantization network. The entire encoder and decoder bodies both contain four stages.
-<div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 
-# Data
+
+# Data Download
 These training datasets can be downloaded from the above links.
--[DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K)
--[Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
--[CLIC2019](https://www.compression.cc/challenge)
+
+- [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K)
+
+- [Flickr2K](http://cv.snu.ac.kr/research/EDSR/Flickr2K.tar)
+
+- [CLIC2019](https://www.compression.cc/challenge)
 
 # Folder Structure
 Your folder may be similar to this:
 
 ```
-CVQN
---logs (log)
---ckps (checkpoint)
---tbs (tensorboard log)
---yaml (yaml)
+__CVQN__
+--logs (log folder)
+--ckps (checkpoint folder)
+--tbs (tensorboard log folder)
+--yaml (yaml folder)
 --pytorch_msssim
 --config
 --python file
@@ -47,8 +58,10 @@ An example to train a model:
 python main_train_eval.py --config yaml/XXX.yaml
 ```
 
-# Citation
+### Citation
 If you find this code useful, please cite our paper:
+
+```
 @inproceedings{Zhong2020CVQN,
   title     = {Channel-Level Variable Quantization Network for Deep Image Compression},
   author    = {Zhong, Zhisheng and Akutsu, Hiroaki and Aizawa, Kiyoharu},
@@ -56,3 +69,4 @@ If you find this code useful, please cite our paper:
   pages     = {467--473},
   year      = {2020}
 }
+```
