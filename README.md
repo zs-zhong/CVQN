@@ -14,7 +14,7 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 ***********************************************************************************************************
 
 # Overview
-<center>Framework of the channel-level variable quantization network.</center>
+<p align="center">Framework of the channel-level variable quantization network</p>
 <div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 
 # Dependencies
@@ -65,7 +65,6 @@ If you find this code useful, please cite our paper:
   title     = {Channel-Level Variable Quantization Network for Deep Image Compression},
   author    = {Zhong, Zhisheng and Akutsu, Hiroaki and Aizawa, Kiyoharu},
   booktitle = {Proceedings of the International Joint Conference on Artificial Intelligence},
-  pages     = {467--473},
   year      = {2020}
 }
 ```
