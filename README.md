@@ -16,7 +16,7 @@ By [Zhisheng Zhong](https://zzs1994.github.io), Hiroaki Akutsu and [Kiyoharu Aiz
 
 ## Overview
 
-<div align=center><img src="https://github.com/zzs1994/CVQN/blob/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
+<div align=center><img src="https://github.com/zzs1994/CVQN/tree/master/page_image/overview_CVQN.jpg" width="90%" height="90%"></div align=center>
 <p align="center">Framework of the channel-level variable quantization network.</p>
 
 ## Dependencies
